@@ -1,10 +1,15 @@
-*{
+@font-face {
+    font-family: title;
+    src: url("https://static.wixstatic.com/ufonts/09374c_6bb11670e04148429125905b1c9cc00c/woff/file.woff") format("woff"), url("https://static.wixstatic.com/ufonts/09374c_6bb11670e04148429125905b1c9cc00c/woff2/file.woff2") format("woff2"), url("https://static.wixstatic.com/ufonts/09374c_6bb11670e04148429125905b1c9cc00c/ttf/file.ttf") format("ttf");
+  }
+
+ *{
     text-decoration: none;
     padding: 0;
     margin: 0;
-    /* color: black; */
     text-align: center;
-    border: 1px solid red;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid red; */
 }
 
 /* HEADER */
@@ -12,7 +17,7 @@ header{
     top: 0;
     width: 100%;
     height: 6vh;
-    background-color: rgba(146, 108, 76, 0.87);
+    background-color: rgba(255, 211, 193, 0.748);
     position: fixed;
     z-index: 1;
     display: flex;
@@ -37,11 +42,12 @@ nav li{
     font-size: 11px;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 header a{
     text-decoration: none;
-    color: #fff;
+    color: rgba(0, 0, 0, 0.598);
 }
 
 header li a:hover {
@@ -69,28 +75,34 @@ header li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(image/home/backglogo.jpg);
+    background-image: url(image/backlogo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.title{ font-family: ;}
-.slogan{ font-family: ;}
+.title{ font-family: title;
+font-weight: bolder;}
+.slogan{ font-family:'Covered By Your Grace', cursive;}
 
 .logo h1{ font-size: 40px; padding:20px;}
-.logo h2{ font-size: 12px; padding:30px;}
-.logo p{ font-size: 15px}
+.logo h2{ font-size: 15px; padding:20 auto; font-family: 'Codystar', cursive;}
+.logo p{ font-size: 18px; font-family: 'Covered By Your Grace', cursive;}
 
 .tile-container{
     top:50px;
     width: 100%;
-    height: 200px;
+    height: 150px;
     display:  flex;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
+}
+
+.tile-container h1{
+    font-family: 'Codystar';
+    font-size: 30;
 }
 
 .tile{
@@ -100,11 +112,12 @@ header li a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
 }
 
 .tile img {
     width: 30vh;
-    height: 30vh;
+    height: 40vh;
 }
 .tile a img:hover{
     filter: grayscale(100%);
@@ -116,9 +129,12 @@ header li a:hover {
     display: flex;
     align-items: center;
     text-align: center;
+    font-family: 'Codystar', cursive;
+    font-weight: bolder;
 }
 .tile a{    
-    font-size: 23px;
+    font-size: 35px;
+    font-family: 'Prata', serif;
     color: black;
     line-height: .75;
     text-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2);
@@ -135,9 +151,14 @@ header li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(image/backlogo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 .profile{
-    position: relative;
     width: 95vh;
     height: 95vh;
     align-items: center;
@@ -146,26 +167,32 @@ header li a:hover {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    background-color: #fff;
 }
 
  .profile h1{
-    padding:10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: title;
+    font-weight: bolder;
+    padding:0px 0px 10px 0px;
     font-size: 30px;
-    font-size-adjust: inherit;
-    /* position: absolute; */
     z-index: 1;
 }
-.profile h3, h5{
+.profile h3 {
     padding-top: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 12px;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 18px;
+}
+.profile h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
 }
 .profile p {
     display: inline-block;
-    width: 70%;
-    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 10px;
+    padding-bottom: 50px;
 }
 
 .profile img{
@@ -179,6 +206,11 @@ header li a:hover {
     display: flex;
     box-sizing: border-box;
     text-align: center;
+    background-image: url(image/10.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .getintouch{
@@ -188,8 +220,7 @@ header li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    background-image: url(image/home/contactbackg.jpg);
+    background-image: url(image/backlogo1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -201,6 +232,7 @@ header li a:hover {
     padding: 30px auto;
     margin: 30px auto;
     font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .contact-form {
@@ -210,7 +242,7 @@ header li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    font-family: 'Covered By Your Grace', cursive;
 }
 
 .contact-form form{
@@ -219,28 +251,45 @@ header li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 12px;
 }
 
 .contact-form input {
     width: 300px;
     height: 30px;
     margin-bottom: 15px;
+    font-family: 'Covered By Your Grace', cursive;
+    color: black;
+    background-color: rgba(241, 228, 207, 0.87);
+}
+
+.contact-form label {
+    font-family: 'Montserrat', sans-serif;
+    height: 20px;
+    font-weight: bold;
+    font-size: 11px;
 }
 
 .contact-form textarea {
     width: 300px;
     height: 100px;
     margin-bottom: 15px;
+    font-family: 'Covered By Your Grace', cursive;
+    background-color: rgba(255, 255, 255, 0.646);
+    color: black;
 }
 
 .contact-form #submit {
     font-family: ;
-    width: 60px;
+    width: 80px;
+    height: 60px;
     float: right;
+    font-family: title;
+    color: white;
+    background-color: black;
 }
 .contact-form #submit:hover {
-    width: 60px;
+    width: 80px;
+    height: 60px;
     background-color: rgba(253, 173, 0, 0.571);
     color: rgb(0, 0, 0);
 }
@@ -264,23 +313,27 @@ header li a:hover {
     text-align: center;
     width: 100%;
     height: 110px;
-    margin: 30px 0px;
+    margin: 60px 0px 100px 0px;
+    padding: 0px 0px 50px 0px;
 }
 .gallery h1{
     text-align: center;
     margin: 50px 0 0px 0;
+    font-size: 30px
 }
 .gallery p{
     margin-bottom: 20px;
     text-align: center;
     padding: 0 auto;
+    font-family: 'Playfair Display', serif;
 }
 
 .photo{
     float: left;
-    width: 32.80%;
+    width: 32.8%;
     height: 300px;
 }
+
 .gridphoto img{
    object-fit: cover;
    width: 100%;
@@ -303,12 +356,17 @@ header li a:hover {
 footer{
     width: 100%;
     padding: 20px 0px;
-    background-color: rgba(146, 108, 76, 0.87); 
+    background-color:  rgba(255, 211, 193, 0.748); 
     display: flex;
     justify-content: center;
     align-content: center;
     justify-content: center;
     flex-direction: column;
+}
+
+footer p{
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 15px
 }
 
 .quote{
@@ -342,4 +400,5 @@ footer{
     padding: 5px 0px;
     font-size: 10px;
     text-align: center;
+    font-style: italic;
 }
