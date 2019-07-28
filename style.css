@@ -96,7 +96,7 @@ header li a:hover {
     width: 30vh;
     height: 30vh;
 }
-.tile img:hover{
+.tile a img:hover{
     filter: grayscale(100%);
 }
 .tile h1{
@@ -128,8 +128,8 @@ header li a:hover {
 }
 .profile{
     position: relative;
-    width: 90vh;
-    height: 90vh;
+    width: 95vh;
+    height: 95vh;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -161,6 +161,73 @@ header li a:hover {
 .profile img{
     width: 230px;
     border-radius: 50%;
+}
+
+/* CONTACT */
+.contact {
+    width; 100%;
+    display: flex;
+    /* margin: 5% auto; */
+    box-sizing: border-box;
+    text-align: center;
+    
+    /* flex-direction: column; */
+}
+
+.getintouch{
+    width:50%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(image/home/tilebackg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contact-form {
+    width:50%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    /* margin: 20px auto; */
+}
+
+.contact-form form{
+   display: inline-grid;
+}
+
+.contact-form label{
+    display: inline-grid;
+    height:50px;
+ }
+
+.contact-form input {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.contact-form textarea {
+    width: 556px;
+    margin-bottom: 15px;
+}
+
+.contact-form #submit {
+    font-family: ;
+    width: 200px;
+    float: right;
+}
+.contact-form #submit:hover {
+    width: 200px;
+    background-color: rgba(253, 173, 0, 0.571);
+    color: rgb(0, 0, 0);
 }
 
 
