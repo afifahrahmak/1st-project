@@ -2,8 +2,8 @@
     text-decoration: none;
     padding: 0;
     margin: 0;
-    color: black;
-    text-size-adjust: inherit;
+    /* color: black; */
+    text-align: center;
     border: 1px solid red;
 }
 
@@ -53,7 +53,7 @@ header li a:hover {
     top: 10vh;
     bottom: 10vh;
     width: 100%;
-    height: 110vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,12 +64,12 @@ header li a:hover {
 
 .logo{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(image/home/backghome.jpg);
+    background-image: url(image/home/backglogo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -77,10 +77,10 @@ header li a:hover {
 }
 
 .title{ font-family: ;}
-.slogan{ font-family: ; font-style: italic;}
+.slogan{ font-family: ;}
 
-.logo h1{ font-size: 50px;}
-.logo h2{ font-size: 20px;}
+.logo h1{ font-size: 40px; padding:20px;}
+.logo h2{ font-size: 12px; padding:30px;}
 .logo p{ font-size: 15px}
 
 .tile{
@@ -93,10 +93,11 @@ header li a:hover {
 }
 
 .tile img {
+    width: 30vh;
     height: 30vh;
 }
 .tile img:hover{
-    filter: drop-shadow(5px 5px 5px 5px rgba(0,0,0,0.9));
+    filter: grayscale(100%);
 }
 .tile h1{
     height: 30vh;
@@ -105,17 +106,68 @@ header li a:hover {
     display: flex;
     align-items: center;
     text-align: center;
+}
+.tile a{    
     font-size: 23px;
+    color: black;
     line-height: .75;
     text-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 .tile a:hover { color: rgb(253, 173, 0) }
 
 /* ABOUT */
+#about{
+    width: 100%;
+    padding: 50px 0px 40px 0px;
+    padding-bottom: 70px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    position: relative;
+    width: 90vh;
+    height: 90vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+ .profile h1{
+    padding:10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-size-adjust: inherit;
+    /* position: absolute; */
+    z-index: 1;
+}
+.profile h3, h5{
+    padding-top: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 12px;
+}
+.profile p {
+    display: inline-block;
+    width: 70%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+
+.profile img{
+    width: 230px;
+    border-radius: 50%;
+}
+
 
 /* FOOTER */
 footer{
     width: 100%;
+    padding: 20px 0px;
     background-color: rgba(146, 108, 76, 0.87); 
     display: flex;
     justify-content: center;
@@ -134,16 +186,25 @@ footer{
 }
 
 .socialmedia{
+    padding-top: 15px;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    border:  5px auto;
 }
 
+.socialmedia img{
+    width: 20px;
+    padding: 5px;
+    display: inline-block;  
+}
 .copyright{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 8px;
+    padding: 5px 0px;
+    font-size: 10px;
     text-align: center;
 }
