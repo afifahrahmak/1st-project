@@ -9,7 +9,132 @@
 </head>
 
 <!-- HEADER -->
-<header>
+<header><html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Dusty Memories</title>
+            <link rel="stylesheet" href="style.css">
+            <link href="https://fonts.googleapis.com/css?family=Codystar|Covered+By+Your+Grace|Dawning+of+a+New+Day|Montserrat|Playfair+Display|Prata|Roboto&display=swap" rel="stylesheet"> 
+        </head>
+        
+        <!-- HEADER -->
+        <header>
+                <nav id="nav-menu">
+                    <div class="toggle-menu" onclick="toggle()"></div>
+                    <div class="toggle-menu" onclick="toggle(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                          </div> 
+                    <side class="side-bar">
+                        <ul>
+                            <li><a href="index.html"><strong>HOME</strong></a></li>
+                            <li><a href="about.html"><strong>ABOUT</strong></a></li>
+                            <li><a href="gallery.html"><strong>GALLERY</strong></a></li>
+                            <li><a href="contact.html"><strong>CONTACT</strong></a></li>
+                        </ul>
+                    </side>
+                </nav>
+        </header>
+        
+        <body>
+                <section id="gallery">
+                        <section class="gallery">
+                                <h1 class="title"> Photography</h1>
+                                <p>because every picture has a story</p>
+                        </section>
+        
+        
+                        <section class="slideshow-container">
+                                <div class="mySlides fade">
+                                    <img  src='image/1.jpg'/>
+                                    <div class="text">lorem ipsum blablabla</div>
+                                </div>
+                                <div class="mySlides fade">
+                                    <img  src='image/2.jpg'/>
+                                    <div class="text">lorem ipsum blablabla</div>
+                                </div>
+                                <div class="mySlides fade">
+                                    <img  src='image/3.jpg'/>
+                                    <div class="text">lorem ipsum blablabla</div>
+                                </div>
+                                <div class="mySlides fade">
+                                    <img  src='image/4.jpg'/>
+                                    <div class="text">lorem ipsum blablabla</div>
+                                </div>
+                            
+                            
+                                <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+                                <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+                            <br/>
+                            
+                            
+                            <div style='text-align: center;'>
+                                <span class="dot" onclick='currentSlide(1)'></span>
+                                <span class="dot" onclick='currentSlide(2)'></span>
+                                <span class="dot" onclick='currentSlide(3)'></span>
+                                <span class="dot" onclick='currentSlide(4)'></span>
+                            </div>
+                            
+                        </section>
+              
+              
+                
+                        <section class="gridphoto">
+                            <div class="photo" >
+                                <img src="image/1.jpg" alt="">
+                            </div>
+                            <div class="photo" >
+                                <img src="image/2.jpg" alt="">
+                            </div>
+                            <div class="photo" >
+                                <img src="image/5.jpg" alt="">
+                            </div>
+                            <div class="photo" >
+                                <img src="image/3.jpg" alt="">
+                            </div>
+                            <div class="photo" >
+                                <img src="image/4.jpg" alt="">
+                            </div>
+                            <div class="photo" >
+                                <img src="image/6.jpg" alt="">
+                            </div>
+                            <div class="photo" >
+                                <img src="image/backlogo7.jpg" alt="">
+                            </div>
+                            <div class="photo" >
+                                <img src="image/11.jpg" alt="">
+                            </div>
+                            <div class="photo" >
+                                <img src="image/12.jpg" alt="">
+                            </div>
+                        </section>
+                </section>
+        </body>
+        
+        <!-- FOOTER -->
+        <footer>
+                <div class="quote">
+                    <h2 class="title">Dusty Memories</h2>
+                    <p class="slogan">"memories in a snap - capturing life, creating art"</p>   
+                 </div>
+                           
+                 <ul class="socialmedia">
+                    <li class="socmed"><a href="https://www.instagram.com/afifahrahmak" target="_blank"><img src="image/ig.png" alt=""></a></li>
+                    <li class="socmed"><a href="https://www.pinterest.com/afifahrahmak" target="_blank"><img src="image/pin.png" alt=""></a></li>
+                    <li class="socmed"><a href="https://www.github.com/afifahrahmak" target="_blank"><img src="image/git.png" alt=""></a></li>
+                    <!-- <li class="socmed"><a href="https://www.linkedin.com/afifahrahmak" target="_blank"><img src="image/link.png" alt=""></a></li> -->
+                </ul>
+            </footer>
+            <section class="copyright">
+                    <p>Aimed for educational project.       <strong>&copycopyright by Afifahrahmak </strong></p>
+            </section>
+            
+            
+            <script src="ark.js"></script>
+        </html>
         <nav id="nav-menu">
             <div class="toggle-menu" onclick="toggle()"></div>
             <div class="toggle-menu" onclick="toggle(this)">

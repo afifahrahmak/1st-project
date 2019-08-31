@@ -1,10 +1,10 @@
 // DOM Selection
 
-// MENU (NAVBAR) SET
+//------- MENU (NAVBAR) SET
 var toggleStat = false;
 var toggle = function(x){
     x.classList.toggle("change");
-    var getSidebar = document.querySelector('.side-bar');
+    var getSidebar = document.getElementsByClassName('side-bar');
     var getSidebarLink= document.querySelector('.side-bar a');
 
     if (toggleStat === false){
@@ -23,9 +23,7 @@ var toggle = function(x){
     }
 }
 
-//EFFECTS SET
-
-// TYPEWRITER EFFECT
+//------LOGO-HOME-TYPEWRITER EFFECT
 var i = 0;
 var speed1 = 150;
 var logo = function typeWriter() {
@@ -36,7 +34,6 @@ var logo = function typeWriter() {
         setTimeout(typeWriter, speed1);
     }
 }
-
 var j = 0;
 var speed2 = 80;
 var quote = function typeWriter() {
@@ -50,30 +47,41 @@ var quote = function typeWriter() {
 
 
 
-document.addEventListener('DOMContentLoaded', 
-    function() {
-        var elems = document.querySelectorAll('.carousel');
-        var instances = M.Carousel.init(elems, options);
-    });
+//------GALLERY-SLIDESHOW 
 
-
-//SLIDE IMAGE
 var slideIndex = 1;
-showSlides(slideIndex);
+var myTimer;
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+})
+
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  }
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides(n){
   var i;
-  var slides = document.getElementsByClassName("slide");
+  var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
@@ -83,6 +91,6 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "flex";
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-} 
+}
