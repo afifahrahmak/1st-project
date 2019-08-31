@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="infiniteList.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    
+</head> 
+
+<!-- HEADER -->
+<header>
+    <nav id="nav-menu">
+        <div class="toggle-menu" onclick="toggle()"></div>
+        <div class="toggle-menu" onclick="toggle(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div> 
+        <side class="side-bar">
+            <ul>
+                <li><a href="index.html"><strong>HOME</strong></a></li>
+                <li><a href="about.html"><strong>ABOUT</strong></a></li>
+                <li><a href="gallery.html"><strong>GALLERY</strong></a></li>
+                <li><a href="contact.html"><strong>CONTACT</strong></a></li>
+                <li><a href="portfolio.html"><strong>PORTFOLIO</strong></a></li>
+            </ul>
+        </side>
+    </nav>
+</header>
+
+
+<!-- PORTFOLIO-INFINITE_LIST-->
+<body>
+
+    <div class="wrapper" id="landing">
+        <h1> List First, then </h1>
+        <img src="image/justdoit.png">
+        <p>Welcome to <strong style=color:rgb(253,173,0); >InfiniteList</strong>.
+            <br> A better way to get work done.</p>
+
+        <form id="nameform">
+          
+          <div class="group">
+            <input type="text" autocomplete="off" required="required"/>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Name</label>
+          </div>
+          
+          
+          <div class="btn-box">
+            <button class="btn btn-submit" type="submit">START</button>
+          </div>
+
+        </form>
+    </div>
+    
+    <div id="main-page">
+        <div id="main-header">
+            <p>Hi <strong style=color:rgb(71,186,188);>Value</strong> , lets take a note!</p>
+        </div>
+        <div class="note" id="noteId">
+            <div class="note-list">
+                <span class="done">done</span>
+                <p>Hey, this is an example for you. You can Write your thoughts or your task for below!</p>
+                <span class="delete">delete</span>
+            </div>
+        </div>
+
+        <div class="note-input">
+            <form id="note-form">
+                <span></span>
+                <div class="group">
+                    <textarea autocomplete="off" type="textarea" id="textarea-note"></textarea>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>List it, get your work done today!</label>
+                </div>
+                <div class="btn-box" id="btn-add">
+                    <button class="btn btn-submit" type="submit">ADD</button>
+                </div>        
+            </form>
+        </div>
+
+    </div>
+    <script src="infiniteList.js"></script>
+</body>
+
+<!-- FOOTER -->
+
+<section class="copyright-portfolio">
+        <p>Aimed for educational project. <strong> by Afifahrahmak </strong></p>
+</section>
+
+<script src="ark.js"></script>
+</html>
