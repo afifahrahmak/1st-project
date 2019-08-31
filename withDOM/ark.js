@@ -4,7 +4,7 @@
 var toggleStat = false;
 var toggle = function(x){
     x.classList.toggle("change");
-    var getSidebar = document.getElementsByClassName('side-bar');
+    var getSidebar = document.querySelector('.side-bar');
     var getSidebarLink= document.querySelector('.side-bar a');
 
     if (toggleStat === false){
