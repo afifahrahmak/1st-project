@@ -1,10 +1,9 @@
-// DOM Selection
 
 //------- MENU (NAVBAR) SET
 var toggleStat = false;
 var toggle = function(x){
     x.classList.toggle("change");
-    var getSidebar = document.getElementsByClassName('side-bar');
+    var getSidebar = document.querySelector('.side-bar');
     var getSidebarLink= document.querySelector('.side-bar a');
 
     if (toggleStat === false){
@@ -57,7 +56,6 @@ window.addEventListener("load",function() {
     myTimer = setInterval(function(){plusSlides(1)}, 4000);
 })
 
-// NEXT AND PREVIOUS CONTROL
 function plusSlides(n){
   clearInterval(myTimer);
   if (n < 0){
@@ -72,7 +70,6 @@ function plusSlides(n){
   }
 }
 
-//Controls the current slide and resets interval if needed
 function currentSlide(n){
   clearInterval(myTimer);
   myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
