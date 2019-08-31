@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Codystar|Covered+By+Your+Grace|Dawning+of+a+New+Day|Montserrat|Playfair+Display|Prata|Roboto&display=swap" rel="stylesheet"> 
+    <title>Dusty Memories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- HEADER -->
+<header>
+    <nav id="nav-menu">
+        <div class="toggle-menu" onclick="toggle()"></div>
+        <div class="toggle-menu" onclick="toggle(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div> 
+        <side class="side-bar">
+            <ul>
+                <li><a href="#home"><strong>HOME</strong></a></li>
+                <li><a href="#about"><strong>ABOUT</strong></a></li>
+                <li><a href="gallery.html"><strong>GALLERY</strong></a></li>
+                <li><a href="contact.html"><strong>CONTACT</strong></a></li>
+            </ul>
+        </side>
+    </nav>
+</header>
+
+<!-- INDEX OR HOME --> 
+<body onload="logo()" onpageshow="quote()">
+    <section id="home">
+        <div class="logo" >
+            <!-- <h1 class="title">Dusty Memories</h1> -->
+            <h1 id="logo-effect"></h1>
+            <h2>art - photography - words</h2>
+            <p id="slogan"></p>
+        </div>
+        
+
+        <div class="tile-container"> 
+            <div class="tile">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a href="gallery.html"><img src="image/14.jpg"></a>
+                <h1><a href="gallery.html">word by word</a></h1>
+                <a href="gallery.html"><img src="image/12.jpg"></a>
+                <h1><a href="gallery.html">stuff i've been feeling lately</a></h1>
+                <a href="gallery.html"><img src="image/1.jpg"></a>
+                <h1><a href="gallery.html">pretty little world</a></h1>
+                <a href="gallery.html"><img src="image/17.jpg"></a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+        </div>
+
+
+        
+    </section>
+
+    <!-- ABOUT -->
+        <section id="about">
+                <div class="profile">
+                    <h1>About me</h1>
+                    <img src="image/profile.jpg">
+                    <h3> AFI | 22 | INA</h3>
+                    <h6>Hacktiv8 Student - Infinite Fox</h6>
+                    <h3> HI THERE !</h3>
+                    <p> I am a Geoenthusiat girl who loved to take a picture of random moment and other things. Currently switch my career to your future woman delevoper!</p>
+                </div>
+        </section>
+
+</body>
+
+<!-- FOOTER -->
+<footer>
+    <div class="quote">
+        <h2 class="title">Dusty Memories</h2>
+        <p class="slogan">"memories in a snap - capturing life, creating art"</p>   
+     </div>
+               
+     <ul class="socialmedia">
+        <li class="socmed"><a href="https://www.instagram.com/afifahrahmak" target="_blank"><img src="image/ig.png" alt=""></a></li>
+        <li class="socmed"><a href="https://www.pinterest.com/afifahrahmak" target="_blank"><img src="image/pin.png" alt=""></a></li>
+        <li class="socmed"><a href="https://www.github.com/afifahrahmak" target="_blank"><img src="image/git.png" alt=""></a></li>
+        <!-- <li class="socmed"><a href="https://www.linkedin.com/afifahrahmak" target="_blank"><img src="image/link.png" alt=""></a></li> -->
+    </ul>
+</footer>
+<section class="copyright">
+        <p>Aimed for educational project.       <strong>&copycopyright by Afifahrahmak </strong></p>
+</section>
+
+
+<script src="ark.js"></script>
+</html>
